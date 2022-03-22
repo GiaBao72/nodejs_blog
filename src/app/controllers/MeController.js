@@ -4,7 +4,7 @@ const {
     muntipleMongooseToObject,
 } = require('../../util/mongoose');
 
-class MeController {
+const MeController = {
     //get me/stored/courses
     storedCourses(req, res, next) {
         Course.find({})
@@ -17,4 +17,4 @@ class MeController {
     }
 }
 
-module.exports = new MeController();
+module.exports = MeController;
